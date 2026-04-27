@@ -654,7 +654,7 @@ class EditLogic extends GetxController {
       lastDate: DateTime.now(),
       initialDatePickerMode: DatePickerMode.day,
       initialEntryMode: DatePickerEntryMode.calendarOnly,
-      firstDate: DateTime.now().subtract(const Duration(days: 365)),
+      firstDate: DateTime(1900, 1, 1),
     );
     if (nowDateTime != null) {
       state.currentDiary.time = state.currentDiary.time.copyWith(
